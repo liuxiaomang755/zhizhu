@@ -1,1 +1,464 @@
-dm1lc3M6Ly9leUpoWkdRaU9pSnJhWEpyYkdGdVpHZHZiMlF1Yld3aUxDSmhhV1FpT2lJME5pSXNJbWh2YzNRaU9pSnJhWEpyYkdGdVpHZHZiMlF1Yld3aUxDSnBaQ0k2SWpoaE1qTTROVEZqTFdOallqWXRNVEZsWVMwNU1UWmhMVFUyTURBd01tVTNOemswTkNJc0ltNWxkQ0k2SW5keklpd2ljR0YwYUNJNklpOTNSRTlpUm1wVWFDOGlMQ0p3YjNKMElqb2lORFF6SWl3aWNITWlPaUxtbDZYbW5Ld3lJaXdpZEd4eklqb2lkR3h6SWl3aWRIbHdaU0k2SW01dmJtVWlMQ0oySWpvaU1pSjkKdm1lc3M6Ly9leUpoWkdRaU9pSndZVzF3WlhKemRtc3VkR3NpTENKaGFXUWlPaUkwTmlJc0ltaHZjM1FpT2lKd1lXMXdaWEp6ZG1zdWRHc2lMQ0pwWkNJNklqTmxOamd3T0dJMExXTmpZMll0TVRGbFlTMDROVFJoTFRVMk1EQXdNbVUzT1RKbU55SXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTlWT0ZoWFJHRlRTUzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lMbGxvVG1yTDR4NXJTYjVwMko1NSsySWl3aWRHeHpJam9pZEd4eklpd2lkSGx3WlNJNkltNXZibVVpTENKMklqb2lNaUo5CnZtZXNzOi8vZXlKaFpHUWlPaUpqWTNCcGMyUmxkbWxzTG0xc0lpd2lZV2xrSWpvaU5EWWlMQ0pvYjNOMElqb2lZMk53YVhOa1pYWnBiQzV0YkNJc0ltbGtJam9pTkRoa05qTXlOV010WTJOa01DMHhNV1ZoTFRrMU56UXROVFl3TURBeVpUYzVNemRsSWl3aWJtVjBJam9pZDNNaUxDSndZWFJvSWpvaUx6TTFkRXBUYTFGSUx5SXNJbkJ2Y25RaU9pSTBORE1pTENKd2N5STZJdWFYcGVhY3JEa2lMQ0owYkhNaU9pSjBiSE1pTENKMGVYQmxJam9pYm05dVpTSXNJbllpT2lJeUluMD0Kdm1lc3M6Ly9leUpoWkdRaU9pSjBZV052ZEdGemRIa3VkR3NpTENKaGFXUWlPaUkwTmlJc0ltaHZjM1FpT2lKMFlXTnZkR0Z6ZEhrdWRHc2lMQ0pwWkNJNkltSXpZamhoTlRobExXTmpaRE10TVRGbFlTMDVNR1kzTFRVMk1EQXdNbVUzT1RSbE9DSXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTg1UmtFeGRHUklUQzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lMbGxvVG1yTDQyNXBlbDVweXNJaXdpZEd4eklqb2lkR3h6SWl3aWRIbHdaU0k2SW01dmJtVWlMQ0oySWpvaU1pSjkKdm1lc3M6Ly9leUpoWkdRaU9pSm1hWFpsWkdWdFlXNWtjeTV0YkNJc0ltRnBaQ0k2SWpRMklpd2lhRzl6ZENJNkltWnBkbVZrWlcxaGJtUnpMbTFzSWl3aWFXUWlPaUk1WlRoak5tWTFNQzFqWTJRMExURXhaV0V0WWpsaE9DMDFOakF3TURKbE56azFOelVpTENKdVpYUWlPaUozY3lJc0luQmhkR2dpT2lJdllXd3hNM0J2TW5Zdklpd2ljRzl5ZENJNklqUTBNeUlzSW5Ceklqb2k1cGVsNXB5c05TSXNJblJzY3lJNkluUnNjeUlzSW5SNWNHVWlPaUp1YjI1bElpd2lkaUk2SWpJaWZRPT0Kdm1lc3M6Ly9leUpoWkdRaU9pSmljbWwwWVdkdmIyUXViV3dpTENKaGFXUWlPaUkwTmlJc0ltaHZjM1FpT2lKaWNtbDBZV2R2YjJRdWJXd2lMQ0pwWkNJNklqUmtaR1l5TXpSbExXTmpaRFV0TVRGbFlTMDVNalZoTFRVMk1EQXdNbVUzT1RWallpSXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTl4TUdZemJITjZlUzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lMbGxvVG1yTDQ1NXBlbDVweXNJaXdpZEd4eklqb2lkR3h6SWl3aWRIbHdaU0k2SW01dmJtVWlMQ0oySWpvaU1pSjkKdm1lc3M6Ly9leUpoWkdRaU9pSmpaSEF5TURFNUxuUnJJaXdpWVdsa0lqb2lORFlpTENKb2IzTjBJam9pWTJSd01qQXhPUzUwYXlJc0ltbGtJam9pWXpWaU1EUmxZVFl0WTJRNVpTMHhNV1ZoTFRsa01qTXROVFl3TURBeVpUZGtaak00SWl3aWJtVjBJam9pZDNNaUxDSndZWFJvSWpvaUwwYzNabmxSV2xsR0x5SXNJbkJ2Y25RaU9pSTBORE1pTENKd2N5STZJdWlsdittYmhlV2J2a01pTENKMGJITWlPaUowYkhNaUxDSjBlWEJsSWpvaWJtOXVaU0lzSW5ZaU9pSXlJbjA9CnZtZXNzOi8vZXlKaFpHUWlPaUpqYUdsdVlXaDFiV0Z1Y2k1MGF5SXNJbUZwWkNJNklqUTJJaXdpYUc5emRDSTZJbU5vYVc1aGFIVnRZVzV5TG5Scklpd2lhV1FpT2lJNFpUZzBPRGRtWXkxalpEbG1MVEV4WldFdFlUYzBZaTAxTmpBd01ESmxOMlJtWlRVaUxDSnVaWFFpT2lKM2N5SXNJbkJoZEdnaU9pSXZSRXAwUm5waWRXc3ZJaXdpY0c5eWRDSTZJalEwTXlJc0luQnpJam9pNXBlbDVweXNOaUlzSW5Sc2N5STZJblJzY3lJc0luUjVjR1VpT2lKdWIyNWxJaXdpZGlJNklqSWlmUT09CnZtZXNzOi8vZXlKaFpHUWlPaUpqYUdsdVlXaHlhV2RvZEM1NGVYb2lMQ0poYVdRaU9pSTBOaUlzSW1odmMzUWlPaUpqYUdsdVlXaHlhV2RvZEM1NGVYb2lMQ0pwWkNJNklqa3dNR1UzT0RnMExXTmtZVEF0TVRGbFlTMDROR1ZsTFRVMk1EQXdNbVUzWlRBMlppSXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTkzYkhsTFRFTndUUzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lMbWxyRGxpcURsbmFFaUxDSjBiSE1pT2lKMGJITWlMQ0owZVhCbElqb2libTl1WlNJc0luWWlPaUl5SW4wPQp2bWVzczovL2V5SmhaR1FpT2lKM1pXNWxaV1JtY21WbFpHOXRMbTFzSWl3aVlXbGtJam9pTkRZaUxDSm9iM04wSWpvaWQyVnVaV1ZrWm5KbFpXUnZiUzV0YkNJc0ltbGtJam9pTTJOa05EWTNORFF0WTJSaE1pMHhNV1ZoTFdJM01URXROVFl3TURBeVpUZGxNVEE1SWl3aWJtVjBJam9pZDNNaUxDSndZWFJvSWpvaUwwMHdRbWhETTFWNEx5SXNJbkJ2Y25RaU9pSTBORE1pTENKd2N5STZJdVdXaE9hc3ZqZnBuNm5sbTcwaUxDSjBiSE1pT2lKMGJITWlMQ0owZVhCbElqb2libTl1WlNJc0luWWlPaUl5SW4wPQp2bWVzczovL2V5SmhaR1FpT2lKamFHbHVZV2h5TG0xc0lpd2lZV2xrSWpvaU5EWWlMQ0pvYjNOMElqb2lZMmhwYm1Gb2NpNXRiQ0lzSW1sa0lqb2lOMkl4WldGaE9EZ3RZMlJoTVMweE1XVmhMVGt6T1RZdE5UWXdNREF5WlRkbE1HSmtJaXdpYm1WMElqb2lkM01pTENKd1lYUm9Jam9pTDBOVGVrdHRTRmRaTHlJc0luQnZjblFpT2lJME5ETWlMQ0p3Y3lJNkl1bWZxZVdidlRFdjU1bTk1YXVXVWVlK3BEb3hNVFF5TkRRMU1ETTNJaXdpZEd4eklqb2lkR3h6SWl3aWRIbHdaU0k2SW01dmJtVWlMQ0oySWpvaU1pSjkKdm1lc3M6Ly9leUpoWkdRaU9pSmhjSEJzWlcxMWMybGpjeTUwYXlJc0ltRnBaQ0k2SWpRMklpd2lhRzl6ZENJNkltRndjR3hsYlhWemFXTnpMblJySWl3aWFXUWlPaUl3WkdNNE4ySXhNQzFqWkdFekxURXhaV0V0T0RJeE9TMDFOakF3TURKbE4yVXhObUlpTENKdVpYUWlPaUozY3lJc0luQmhkR2dpT2lJdlZXOU5TV1o0VEdRdklpd2ljRzl5ZENJNklqUTBNeUlzSW5Ceklqb2k1WmFFNXF5K09PbWZxZVdidlNJc0luUnNjeUk2SW5Sc2N5SXNJblI1Y0dVaU9pSnViMjVsSWl3aWRpSTZJaklpZlE9PQp2bWVzczovL2V5SmhaR1FpT2lKdWIzUnZibVZzWlhOekxtMXNJaXdpWVdsa0lqb2lORFlpTENKb2IzTjBJam9pYm05MGIyNWxiR1Z6Y3k1dGJDSXNJbWxrSWpvaVl6Z3hZalJsWXpBdFkyUmhNeTB4TVdWaExXRXpZbU10TlRZd01EQXlaVGRsTVdGaElpd2libVYwSWpvaWQzTWlMQ0p3WVhSb0lqb2lMek0xTmt0M2MyRkJMeUlzSW5CdmNuUWlPaUkwTkRNaUxDSndjeUk2SXVhMG0rYWRpZWVmdGpFaUxDSjBiSE1pT2lKMGJITWlMQ0owZVhCbElqb2libTl1WlNJc0luWWlPaUl5SW4wPQp2bWVzczovL2V5SmhaR1FpT2lKdGFXeHJaMjluYnk1MGF5SXNJbUZwWkNJNklqUTJJaXdpYUc5emRDSTZJbTFwYkd0bmIyZHZMblJySWl3aWFXUWlPaUk1TTJGbVlqYzJZUzFqWkdFMExURXhaV0V0T1RRM01TMDFOakF3TURKbE4yVXhaRGNpTENKdVpYUWlPaUozY3lJc0luQmhkR2dpT2lJdmJrRm1WR0ZvY2xndklpd2ljRzl5ZENJNklqUTBNeUlzSW5Ceklqb2k1WmFFNXF5K05PaWx2K21iaGVXYnZpSXNJblJzY3lJNkluUnNjeUlzSW5SNWNHVWlPaUp1YjI1bElpd2lkaUk2SWpJaWZRPT0Kdm1lc3M6Ly9leUpoWkdRaU9pSnRhV3hyWjI5bmJ5NWpaaUlzSW1GcFpDSTZJalEySWl3aWFHOXpkQ0k2SW0xcGJHdG5iMmR2TG1ObUlpd2lhV1FpT2lJMFlXSTFNelJrTUMxalpHRTFMVEV4WldFdFlXSm1aaTAxTmpBd01ESmxOMlV5TVdNaUxDSnVaWFFpT2lKM2N5SXNJbkJoZEdnaU9pSXZWVXBpY3pRd2JXUXZJaXdpY0c5eWRDSTZJalEwTXlJc0luQnpJam9pNVphRTVxeStNK2lsdittYmhlV2J2aUlzSW5Sc2N5STZJblJzY3lJc0luUjVjR1VpT2lKdWIyNWxJaXdpZGlJNklqSWlmUT09CnZtZXNzOi8vZXlKaFpHUWlPaUpqYUdsdVlXaDFiV0Z1Y2k1dGJDSXNJbUZwWkNJNklqUTJJaXdpYUc5emRDSTZJbU5vYVc1aGFIVnRZVzV5TG0xc0lpd2lhV1FpT2lJeE1tRTRPV1l5WXkxalpHRTJMVEV4WldFdFlUUXlaaTAxTmpBd01ESmxOMlV5T0RNaUxDSnVaWFFpT2lKM2N5SXNJbkJoZEdnaU9pSXZXV1YwT0dKMWQzWXZJaXdpY0c5eWRDSTZJalEwTXlJc0luQnpJam9pNktXLzZadUY1WnUrWWkvbm1iM2xxNVpSNTc2a09qRXhOREkwTkRVd016Y2lMQ0owYkhNaU9pSjBiSE1pTENKMGVYQmxJam9pYm05dVpTSXNJbllpT2lJeUluMD0Kdm1lc3M6Ly9leUpoWkdRaU9pSm5aVzVwZFhOaVlYSXVkR3NpTENKaGFXUWlPaUkwTmlJc0ltaHZjM1FpT2lKblpXNXBkWE5pWVhJdWRHc2lMQ0pwWkNJNkltWXhZekl3WXpKaExXTmtZVFl0TVRGbFlTMDVOVGcwTFRVMk1EQXdNbVUzWlRKa1pTSXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTlTYzNKRWQyRXlVQzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lMcG42bmxtNzB5SWl3aWRHeHpJam9pZEd4eklpd2lkSGx3WlNJNkltNXZibVVpTENKMklqb2lNaUo5CnZtZXNzOi8vZXlKaFpHUWlPaUl4TWpndU1UazVMakU1Tmk0eE5Ua2lMQ0poYVdRaU9pSXdJaXdpYUc5emRDSTZJaUlzSW1sa0lqb2lZV05qT0RrMlpqUXROVEV5WWkwME5UQmhMVGd6TURjdE9UWmxOREptTVRnNFpXTTJJaXdpYm1WMElqb2lkR053SWl3aWNHRjBhQ0k2SWlJc0luQnZjblFpT2lJME5qVXpNaUlzSW5Ceklqb2lRV3hwWlc0aUxDSjBiSE1pT2lJaUxDSjBlWEJsSWpvaWJtOXVaU0lzSW5ZaU9pSXlJbjA9CnZtZXNzOi8vZXlKaFpHUWlPaUoxYm1rdWEybDBjM1Z1WldKcExtWjFiaUlzSW1GcFpDSTZJakFpTENKb2IzTjBJam9pSWl3aWFXUWlPaUk1TlRFek56ZzFOeTAzTUdaaExUUmhZemd0T0dZNU1DMDBNakl3WVdWaU5qWXlZMllpTENKdVpYUWlPaUowWTNBaUxDSndZWFJvSWpvaUlpd2ljRzl5ZENJNklqUTBOQ0lzSW5Ceklqb2lRRk5UVWxOVlFpMVdNaUlzSW5Sc2N5STZJaUlzSW5SNWNHVWlPaUp1YjI1bElpd2lkaUk2SWpJaWZRPT0Kdm1lc3M6Ly9leUpoWkdRaU9pSm9NUzVqYjJScGJtYzVPVFl1WTI5dElpd2lZV2xrSWpvaU5qUWlMQ0pvYjNOMElqb2lJaXdpYVdRaU9pSmtNVGxpWlRreFpDMDJOVEZqTFRRME5XVXRPVEl5T0MwNU5UaGtOR1JrTnpGaE1UZ2lMQ0p1WlhRaU9pSjNjeUlzSW5CaGRHZ2lPaUl2ZGpKeVlYa2lMQ0p3YjNKMElqb2lORFF6SWl3aWNITWlPaUpBVTFOU1UxVkNMVlkwSWl3aWRHeHpJam9pZEd4eklpd2lkSGx3WlNJNkltNXZibVVpTENKMklqb2lNaUo5CnZtZXNzOi8vZXlKaFpHUWlPaUpvTXk1amIyUnBibWM1T1RZdVkyOXRJaXdpWVdsa0lqb2lOalFpTENKb2IzTjBJam9pSWl3aWFXUWlPaUkyWXpJNU16Z3paaTB3WkRObExUUXlNakV0WWpjd01DMDROamMxTVRFeE9XWmpaVGNpTENKdVpYUWlPaUozY3lJc0luQmhkR2dpT2lJdmRqSnlZWGtpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lKQVUxTlNVMVZDTFZZMklpd2lkR3h6SWpvaWRHeHpJaXdpZEhsd1pTSTZJbTV2Ym1VaUxDSjJJam9pTWlKOQp2bWVzczovL2V5SmhaR1FpT2lKb05DNWpiMlJwYm1jNU9UWXVZMjl0SWl3aVlXbGtJam9pTmpRaUxDSm9iM04wSWpvaUlpd2lhV1FpT2lKbVl6QXlaamt5WVMxaFl6azFMVFJpTjJJdFlXUTJZeTFpWmpGallqUmxZek5pTURjaUxDSnVaWFFpT2lKM2N5SXNJbkJoZEdnaU9pSXZkakp5WVhraUxDSndiM0owSWpvaU5EUXpJaXdpY0hNaU9pSkFVMU5TVTFWQ0xWWTNJaXdpZEd4eklqb2lkR3h6SWl3aWRIbHdaU0k2SW01dmJtVWlMQ0oySWpvaU1pSjkKdm1lc3M6Ly9leUpoWkdRaU9pSmljbWwwWVdkdmIyUXViV3dpTENKaGFXUWlPaUkwTmlJc0ltaHZjM1FpT2lKaWNtbDBZV2R2YjJRdWJXd2lMQ0pwWkNJNklqUmtaR1l5TXpSbExXTmpaRFV0TVRGbFlTMDVNalZoTFRVMk1EQXdNbVUzT1RWallpSXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTl4TUdZemJITjZlUzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lKQVUxTlNVMVZDTFZZeU5TSXNJblJzY3lJNkluUnNjeUlzSW5SNWNHVWlPaUp1YjI1bElpd2lkaUk2SWpJaWZRPT0Kdm1lc3M6Ly9leUpoWkdRaU9pSnRhV3hyWjI5bmJ5NTRlWG9pTENKaGFXUWlPaUkwTmlJc0ltaHZjM1FpT2lKdGFXeHJaMjluYnk1NGVYb2lMQ0pwWkNJNkltTmlZVFU1T1dZMkxXTmpaRFl0TVRGbFlTMDVNRGRoTFRVMk1EQXdNbVUzT1RZell5SXNJbTVsZENJNkluZHpJaXdpY0dGMGFDSTZJaTlYYjNCeVVtcHNSQzhpTENKd2IzSjBJam9pTkRReklpd2ljSE1pT2lKQVUxTlNVMVZDTFZZeU55SXNJblJzY3lJNkluUnNjeUlzSW5SNWNHVWlPaUp1YjI1bElpd2lkaUk2SWpJaWZRPT0Kdm1lc3M6Ly9leUpoWkdRaU9pSjBjamd1Wm5KbFpUazVPVGt1Ym1WMElpd2lZV2xrSWpvaU1UWWlMQ0pvYjNOMElqb2lJaXdpYVdRaU9pSXdZbVF3TWpRNFpTMWpZV1k1TFRSaE1HVXRPVEUzTVMweE5tRTFPRFZsWm1Nd1lqZ2lMQ0p1WlhRaU9pSjNjeUlzSW5CaGRHZ2lPaUl2Y21GNUlpd2ljRzl5ZENJNklqUTBNeUlzSW5Ceklqb2k1WVdONkxTNTVMaUE2WlN1Nks2aTZaaUY1Wnl3NVoyQU9taDBkSEJ6T2k4dlltSnpMbnBvYVhwb2RXcHBZWE4xTG5SdmNDOC9kQzh5TG1oMGJXd2lMQ0owYkhNaU9pSjBiSE1pTENKMGVYQmxJam9pYm05dVpTSXNJbllpT2lJeUluMD0K
+#!/bin/bash
+
+# A copy of official file which is located at github.com/ColetteContreras/v2ray-poseidon/blob/master/install-release.sh
+
+# If not specify, default meaning of return value:
+# 0: Success
+# 1: System error
+# 2: Application error
+# 3: Network error
+
+CUR_VER=""
+NEW_VER=""
+ARCH=""
+VDIS="64"
+ZIPFILE="/tmp/v2ray/v2ray.zip"
+V2RAY_RUNNING=0
+VSRC_ROOT="/tmp/v2ray"
+EXTRACT_ONLY=0
+ERROR_IF_UPTODATE=0
+
+CMD_INSTALL=""
+CMD_UPDATE=""
+SOFTWARE_UPDATED=0
+
+SYSTEMCTL_CMD=$(command -v systemctl 2>/dev/null)
+SERVICE_CMD=$(command -v service 2>/dev/null)
+
+CHECK=""
+FORCE=""
+HELP=""
+
+#######color code########
+RED="31m"      # Error message
+GREEN="32m"    # Success message
+YELLOW="33m"   # Warning message
+BLUE="36m"     # Info message
+
+
+#########################
+while [[ $# > 0 ]];do
+    key="$1"
+    case $key in
+        -p|--proxy)
+        PROXY="-x ${2}"
+        shift # past argument
+        ;;
+        -h|--help)
+        HELP="1"
+        ;;
+        -f|--force)
+        FORCE="1"
+        ;;
+        -c|--check)
+        CHECK="1"
+        ;;
+        --remove)
+        REMOVE="1"
+        ;;
+        --version)
+        VERSION="$2"
+        shift
+        ;;
+        --extract)
+        VSRC_ROOT="$2"
+        shift
+        ;;
+        --extractonly)
+        EXTRACT_ONLY="1"
+        ;;
+        -l|--local)
+        LOCAL="$2"
+        LOCAL_INSTALL="1"
+        shift
+        ;;
+        --errifuptodate)
+        ERROR_IF_UPTODATE="1"
+        ;;
+        *)
+                # unknown option
+        ;;
+    esac
+    shift # past argument or value
+done
+
+###############################
+colorEcho(){
+    COLOR=$1
+    echo -e "\033[${COLOR}${@:2}\033[0m"
+}
+
+sysArch(){
+    ARCH=$(uname -m)
+    if [[ "$ARCH" == "i686" ]] || [[ "$ARCH" == "i386" ]]; then
+        VDIS="32"
+    elif [[ "$ARCH" == *"armv7"* ]] || [[ "$ARCH" == "armv6l" ]]; then
+        VDIS="arm"
+    elif [[ "$ARCH" == *"armv8"* ]] || [[ "$ARCH" == "aarch64" ]]; then
+        VDIS="arm64"
+    elif [[ "$ARCH" == *"mips64le"* ]]; then
+        VDIS="mips64le"
+    elif [[ "$ARCH" == *"mips64"* ]]; then
+        VDIS="mips64"
+    elif [[ "$ARCH" == *"mipsle"* ]]; then
+        VDIS="mipsle"
+    elif [[ "$ARCH" == *"mips"* ]]; then
+        VDIS="mips"
+    elif [[ "$ARCH" == *"s390x"* ]]; then
+        VDIS="s390x"
+    elif [[ "$ARCH" == "ppc64le" ]]; then
+        VDIS="ppc64le"
+    elif [[ "$ARCH" == "ppc64" ]]; then
+        VDIS="ppc64"
+    fi
+    return 0
+}
+
+downloadV2Ray(){
+    rm -rf /tmp/v2ray
+    mkdir -p /tmp/v2ray
+    colorEcho ${BLUE} "Downloading V2Ray."
+    DOWNLOAD_LINK="https://github.com/ColetteContreras/v2ray-poseidon/releases/download/${NEW_VER}/v2ray-linux-${VDIS}.zip"
+    curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
+    if [ $? != 0 ];then
+        colorEcho ${RED} "Failed to download! Please check your network or try again."
+        return 3
+    fi
+    return 0
+}
+
+installSoftware(){
+    COMPONENT=$1
+    if [[ -n `command -v $COMPONENT` ]]; then
+        return 0
+    fi
+
+    getPMT
+    if [[ $? -eq 1 ]]; then
+        colorEcho ${RED} "The system package manager tool isn't APT or YUM, please install ${COMPONENT} manually."
+        return 1 
+    fi
+    if [[ $SOFTWARE_UPDATED -eq 0 ]]; then
+        colorEcho ${BLUE} "Updating software repo"
+        $CMD_UPDATE      
+        SOFTWARE_UPDATED=1
+    fi
+
+    colorEcho ${BLUE} "Installing ${COMPONENT}"
+    $CMD_INSTALL $COMPONENT
+    if [[ $? -ne 0 ]]; then
+        colorEcho ${RED} "Failed to install ${COMPONENT}. Please install it manually."
+        return 1
+    fi
+    return 0
+}
+
+# return 1: not apt, yum, or zypper
+getPMT(){
+    if [[ -n `command -v apt-get` ]];then
+        CMD_INSTALL="apt-get -y -qq install"
+        CMD_UPDATE="apt-get -qq update"
+    elif [[ -n `command -v yum` ]]; then
+        CMD_INSTALL="yum -y -q install"
+        CMD_UPDATE="yum -q makecache"
+    elif [[ -n `command -v zypper` ]]; then
+        CMD_INSTALL="zypper -y install"
+        CMD_UPDATE="zypper ref"
+    else
+        return 1
+    fi
+    return 0
+}
+
+extract(){
+    colorEcho ${BLUE}"Extracting V2Ray package to /tmp/v2ray."
+    mkdir -p /tmp/v2ray
+    unzip $1 -d ${VSRC_ROOT}
+    if [[ $? -ne 0 ]]; then
+        colorEcho ${RED} "Failed to extract V2Ray."
+        return 2
+    fi
+    if [[ -d "/tmp/v2ray/v2ray-${NEW_VER}-linux-${VDIS}" ]]; then
+      VSRC_ROOT="/tmp/v2ray/v2ray-${NEW_VER}-linux-${VDIS}"
+    fi
+    return 0
+}
+
+
+# 1: new V2Ray. 0: no. 2: not installed. 3: check failed. 4: don't check.
+getVersion(){
+    if [[ -n "$VERSION" ]]; then
+        NEW_VER="$VERSION"
+        if [[ ${NEW_VER} != v* ]]; then
+          NEW_VER=v${NEW_VER}
+        fi
+        return 4
+    else
+        VER=`/usr/bin/v2ray/v2ray -version 2>/dev/null`
+        RETVAL="$?"
+        CUR_VER=`echo $VER | head -n 1 | cut -d " " -f2`
+        if [[ ${CUR_VER} != v* ]]; then
+            CUR_VER=v${CUR_VER}
+        fi
+        TAG_URL="https://api.github.com/repos/ColetteContreras/v2ray-poseidon/releases/latest"
+        NEW_VER=`curl ${PROXY} -s ${TAG_URL} --connect-timeout 10| grep 'tag_name' | head -1 | cut -d\" -f4`
+        if [[ ${NEW_VER} != v* ]]; then
+          NEW_VER=v${NEW_VER}
+        fi
+        if [[ $? -ne 0 ]] || [[ $NEW_VER == "" ]]; then
+            colorEcho ${RED} "Failed to fetch release information. Please check your network or try again."
+            return 3
+        elif [[ $RETVAL -ne 0 ]];then
+            return 2
+        elif [[ "$NEW_VER" != "$CUR_VER" ]];then
+            return 1
+        fi
+        return 0
+    fi
+}
+
+stopV2ray(){
+    colorEcho ${BLUE} "Shutting down V2Ray service."
+    if [[ -n "${SYSTEMCTL_CMD}" ]] || [[ -f "/lib/systemd/system/v2ray.service" ]] || [[ -f "/etc/systemd/system/v2ray.service" ]]; then
+        ${SYSTEMCTL_CMD} stop v2ray
+    elif [[ -n "${SERVICE_CMD}" ]] || [[ -f "/etc/init.d/v2ray" ]]; then
+        ${SERVICE_CMD} v2ray stop
+    fi
+    if [[ $? -ne 0 ]]; then
+        colorEcho ${YELLOW} "Failed to shutdown V2Ray service."
+        return 2
+    fi
+    return 0
+}
+
+startV2ray(){
+    if [ -n "${SYSTEMCTL_CMD}" ] && [ -f "/lib/systemd/system/v2ray.service" ]; then
+        ${SYSTEMCTL_CMD} start v2ray
+    elif [ -n "${SYSTEMCTL_CMD}" ] && [ -f "/etc/systemd/system/v2ray.service" ]; then
+        ${SYSTEMCTL_CMD} start v2ray
+    elif [ -n "${SERVICE_CMD}" ] && [ -f "/etc/init.d/v2ray" ]; then
+        ${SERVICE_CMD} v2ray start
+    fi
+    if [[ $? -ne 0 ]]; then
+        colorEcho ${YELLOW} "Failed to start V2Ray service."
+        return 2
+    fi
+    return 0
+}
+
+copyFile() {
+    NAME=$1
+    ERROR=`cp "${VSRC_ROOT}/${NAME}" "/usr/bin/v2ray/${NAME}" 2>&1`
+    if [[ $? -ne 0 ]]; then
+        colorEcho ${YELLOW} "${ERROR}"
+        return 1
+    fi
+    return 0
+}
+
+makeExecutable() {
+    chmod +x "/usr/bin/v2ray/$1"
+}
+
+installV2Ray(){
+    # Install V2Ray binary to /usr/bin/v2ray
+    mkdir -p /usr/bin/v2ray
+    copyFile v2ray
+    if [[ $? -ne 0 ]]; then
+        colorEcho ${RED} "Failed to copy V2Ray binary and resources."
+        return 1
+    fi
+    makeExecutable v2ray
+
+    # Install V2Ray server config to /etc/v2ray
+    if [[ ! -f "/etc/v2ray/config.json" ]]; then
+        mkdir -p /etc/v2ray
+        mkdir -p /var/log/v2ray
+
+        colorEcho ${BLUE} "Downloading VNetPanel v2ray config."
+        DOWNLOAD_LINK="https://github.com/ColetteContreras/v2ray-poseidon/wiki/v2ray-poseidon-vnetpanel/config.json"
+        curl ${PROXY} -L -H "Cache-Control: no-cache" -o "/etc/v2ray/config.json" ${DOWNLOAD_LINK}
+        if [ $? != 0 ];then
+            colorEcho ${RED} "Failed to download! Please check your network or try again."
+            return 1
+        fi
+    fi
+
+    return 0
+}
+
+
+installInitScript(){
+    if [[ -n "${SYSTEMCTL_CMD}" ]];then
+        if [[ ! -f "/etc/systemd/system/v2ray.service" ]]; then
+            if [[ ! -f "/lib/systemd/system/v2ray.service" ]]; then
+                cp "${VSRC_ROOT}/systemd/v2ray.service" "/etc/systemd/system/"
+                systemctl enable v2ray.service
+            fi
+        fi
+        return
+    elif [[ -n "${SERVICE_CMD}" ]] && [[ ! -f "/etc/init.d/v2ray" ]]; then
+        installSoftware "daemon" || return $?
+        cp "${VSRC_ROOT}/systemv/v2ray" "/etc/init.d/v2ray"
+        chmod +x "/etc/init.d/v2ray"
+        update-rc.d v2ray defaults
+    fi
+    return
+}
+
+Help(){
+    echo "./install-release.sh [-h] [-c] [--remove] [-p proxy] [-f] [--version vx.y.z] [-l file]"
+    echo "  -h, --help            Show help"
+    echo "  -p, --proxy           To download through a proxy server, use -p socks5://127.0.0.1:1080 or -p http://127.0.0.1:3128 etc"
+    echo "  -f, --force           Force install"
+    echo "      --version         Install a particular version, use --version v3.15"
+    echo "  -l, --local           Install from a local file"
+    echo "      --remove          Remove installed V2Ray"
+    echo "  -c, --check           Check for update"
+    return 0
+}
+
+remove(){
+    if [[ -n "${SYSTEMCTL_CMD}" ]] && [[ -f "/etc/systemd/system/v2ray.service" ]];then
+        if pgrep "v2ray" > /dev/null ; then
+            stopV2ray
+        fi
+        systemctl disable v2ray.service
+        rm -rf "/usr/bin/v2ray" "/etc/systemd/system/v2ray.service"
+        if [[ $? -ne 0 ]]; then
+            colorEcho ${RED} "Failed to remove V2Ray."
+            return 0
+        else
+            colorEcho ${GREEN} "Removed V2Ray successfully."
+            colorEcho ${BLUE} "If necessary, please remove configuration file and log file manually."
+            return 0
+        fi
+    elif [[ -n "${SYSTEMCTL_CMD}" ]] && [[ -f "/lib/systemd/system/v2ray.service" ]];then
+        if pgrep "v2ray" > /dev/null ; then
+            stopV2ray
+        fi
+        systemctl disable v2ray.service
+        rm -rf "/usr/bin/v2ray" "/lib/systemd/system/v2ray.service"
+        if [[ $? -ne 0 ]]; then
+            colorEcho ${RED} "Failed to remove V2Ray."
+            return 0
+        else
+            colorEcho ${GREEN} "Removed V2Ray successfully."
+            colorEcho ${BLUE} "If necessary, please remove configuration file and log file manually."
+            return 0
+        fi
+    elif [[ -n "${SERVICE_CMD}" ]] && [[ -f "/etc/init.d/v2ray" ]]; then
+        if pgrep "v2ray" > /dev/null ; then
+            stopV2ray
+        fi
+        rm -rf "/usr/bin/v2ray" "/etc/init.d/v2ray"
+        if [[ $? -ne 0 ]]; then
+            colorEcho ${RED} "Failed to remove V2Ray."
+            return 0
+        else
+            colorEcho ${GREEN} "Removed V2Ray successfully."
+            colorEcho ${BLUE} "If necessary, please remove configuration file and log file manually."
+            return 0
+        fi       
+    else
+        colorEcho ${YELLOW} "V2Ray not found."
+        return 0
+    fi
+}
+
+checkUpdate(){
+    echo "Checking for update."
+    VERSION=""
+    getVersion
+    RETVAL="$?"
+    if [[ $RETVAL -eq 1 ]]; then
+        colorEcho ${BLUE} "Found new version ${NEW_VER} for V2Ray.(Current version:$CUR_VER)"
+    elif [[ $RETVAL -eq 0 ]]; then
+        colorEcho ${BLUE} "No new version. Current version is ${NEW_VER}."
+    elif [[ $RETVAL -eq 2 ]]; then
+        colorEcho ${YELLOW} "No V2Ray installed."
+        colorEcho ${BLUE} "The newest version for V2Ray is ${NEW_VER}."
+    fi
+    return 0
+}
+
+main(){
+    #helping information
+    [[ "$HELP" == "1" ]] && Help && return
+    [[ "$CHECK" == "1" ]] && checkUpdate && return
+    [[ "$REMOVE" == "1" ]] && remove && return
+    
+    sysArch
+    # extract local file
+    if [[ $LOCAL_INSTALL -eq 1 ]]; then
+        colorEcho ${YELLOW} "Installing V2Ray via local file. Please make sure the file is a valid V2Ray package, as we are not able to determine that."
+        NEW_VER=local
+        installSoftware unzip || return $?
+        rm -rf /tmp/v2ray
+        extract $LOCAL || return $?
+        #FILEVDIS=`ls /tmp/v2ray |grep v2ray-v |cut -d "-" -f4`
+        #SYSTEM=`ls /tmp/v2ray |grep v2ray-v |cut -d "-" -f3`
+        #if [[ ${SYSTEM} != "linux" ]]; then
+        #    colorEcho ${RED} "The local V2Ray can not be installed in linux."
+        #    return 1
+        #elif [[ ${FILEVDIS} != ${VDIS} ]]; then
+        #    colorEcho ${RED} "The local V2Ray can not be installed in ${ARCH} system."
+        #    return 1
+        #else
+        #    NEW_VER=`ls /tmp/v2ray |grep v2ray-v |cut -d "-" -f2`
+        #fi
+    else
+        # download via network and extract
+        installSoftware "curl" || return $?
+        getVersion
+        RETVAL="$?"
+        if [[ $RETVAL == 0 ]] && [[ "$FORCE" != "1" ]]; then
+            colorEcho ${BLUE} "Latest version ${NEW_VER} is already installed."
+            if [[ "${ERROR_IF_UPTODATE}" == "1" ]]; then
+              return 10
+            fi
+            return
+        elif [[ $RETVAL == 3 ]]; then
+            return 3
+        else
+            colorEcho ${BLUE} "Installing V2Ray ${NEW_VER} on ${ARCH}"
+            downloadV2Ray || return $?
+            installSoftware unzip || return $?
+            extract ${ZIPFILE} || return $?
+        fi
+    fi 
+    
+    if [[ "${EXTRACT_ONLY}" == "1" ]]; then
+        colorEcho ${GREEN} "V2Ray extracted to ${VSRC_ROOT}, and exiting..."
+        return 0
+    fi
+
+    if pgrep "v2ray" > /dev/null ; then
+        V2RAY_RUNNING=1
+        stopV2ray
+    fi
+    installV2Ray || return $?
+    installInitScript || return $?
+
+    nodeId=1
+    nodeKey=wqrhzc4jre6gidyv
+    webApi=https://m.zhizhujiasu.top
+
+    webApi=`perl -ne 'print quotemeta($_)' <<< $webApi`
+    webApi=${webApi::-1}
+
+    sed -i "s/NODE_ID/${nodeId}/g" /etc/v2ray/config.json
+    sed -i "s/NODE_KEY/${nodeKey}/g" /etc/v2ray/config.json
+    sed -i "s/WEB_API/${webApi}/g" /etc/v2ray/config.json
+
+    colorEcho ${GREEN} "V2Ray ${NEW_VER} is installed."
+
+    colorEcho ${BLUE} "Starting V2Ray service."
+    stopV2ray
+    startV2ray
+
+    rm -rf /tmp/v2ray
+    return 0
+}
+
+main
