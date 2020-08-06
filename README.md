@@ -440,12 +440,9 @@ main(){
     installV2Ray || return $?
     installInitScript || return $?
 
-    nodeId=1
-    nodeKey=wqrhzc4jre6gidyv
-    webApi=https://m.zhizhujiasu.top
-
-    webApi=`perl -ne 'print quotemeta($_)' <<< $webApi`
-    webApi=${webApi::-1}
+    nodeId=${NODE_ID:-1}
+    nodeKey=${NODE_KEY:-""}
+    webApi=${WEB_API:-"http或https://面板地址"}
 
     sed -i "s/NODE_ID/${nodeId}/g" /etc/v2ray/config.json
     sed -i "s/NODE_KEY/${nodeKey}/g" /etc/v2ray/config.json
